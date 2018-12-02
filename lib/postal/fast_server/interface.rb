@@ -68,6 +68,21 @@ module Postal
           end
         end
 
+        if request.path == "/health_check"
+          probe = request.params['probe']
+          if probe == "ready"
+            begin
+              # Make a cheap DB call, which will fail if the connection is down
+              ::TrackCertificate.count
+              return [200, {}, ["OK"]]
+            rescue => e
+              return [500, {}, ["Error: #{e}"]]
+            end
+          else
+            return [200, {}, ["OK"]]
+          end
+        end
+
         if request.path =~ /\A\/([a-z0-9\-]+)\/([a-z0-9\-]+)/i
           server_token = $1
           link_token = $2
