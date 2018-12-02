@@ -16,7 +16,7 @@ module Postal
     end
 
     def self.register_private_key(email_address)
-      registration = client.new_account(:contact => "mailto:#{email_address}", :terms_of_service_agreed: true)
+      registration = client.new_account(:contact => "mailto:#{email_address}", :terms_of_service_agreed => true)
       logger.info "Successfully registered private key with address #{email_address} and accepted tos"
       true
     end
