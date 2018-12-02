@@ -73,7 +73,9 @@ class ApplicationController < ActionController::Base
   def append_info_to_payload(payload)
     super
     payload[:ip] = request.ip
-    payload[:user] = logged_in? ? current_user.id : nil
+    if ActiveRecord::Base.connected?
+      payload[:user] = logged_in? ? current_user.id : nil
+    end
   end
 
   def url_with_return_to(url)
