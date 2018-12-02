@@ -91,4 +91,6 @@ Rails.application.routes.draw do
   match 'login/reset/:token' => 'sessions#finish_password_reset', :via => [:get, :post]
   root 'organizations#index'
   get 'ip' => 'sessions#ip'
+  
+  get 'health_check' => 'healthcheck#index'
 end
