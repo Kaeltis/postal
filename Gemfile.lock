@@ -71,7 +71,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.3)
     crass (1.0.4)
     createsend (4.1.2)
       hashie (~> 3.0)
@@ -105,7 +105,7 @@ GEM
     highline (2.0.0)
     httparty (0.16.2)
       multi_xml (>= 0.5.2)
-    i18n (1.1.0)
+    i18n (1.1.1)
       concurrent-ruby (~> 1.0)
     jquery-rails (4.3.3)
       rails-dom-testing (>= 1, < 3)
@@ -125,14 +125,14 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
-    loofah (2.2.2)
+    loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.7.0)
+    mail (2.7.1)
       mini_mime (>= 0.1.1)
-    marcel (0.3.2)
+    marcel (0.3.3)
       mimemagic (~> 0.3.2)
-    method_source (0.9.0)
+    method_source (0.9.2)
     mimemagic (0.3.2)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
@@ -151,10 +151,10 @@ GEM
       activerecord (>= 3.0.0)
       activesupport (>= 3.0.0)
     nio4r (2.3.1)
-    nokogiri (1.8.4)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     puma (3.12.0)
-    rack (2.0.5)
+    rack (2.0.6)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.1)
@@ -191,13 +191,13 @@ GEM
       rspec-mocks (~> 3.8.0)
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
-    rspec-expectations (3.8.1)
+    rspec-expectations (3.8.2)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-mocks (3.8.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
-    rspec-rails (3.8.0)
+    rspec-rails (3.8.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
@@ -206,7 +206,7 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    sass (3.5.7)
+    sass (3.7.2)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -230,7 +230,7 @@ GEM
     temple (0.8.0)
     thor (0.19.4)
     thread_safe (0.3.6)
-    tilt (2.0.8)
+    tilt (2.0.9)
     turbolinks (5.2.0)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -257,23 +257,23 @@ DEPENDENCIES
   changey
   chronic
   clockwork
-  coffee-rails (~> 4.2)
+  coffee-rails (~> 4.2, >= 4.2.2)
   createsend (~> 4.0)
   database_cleaner
   dynamic_form
   encrypto_signo
-  factory_girl_rails (~> 4.0)
+  factory_girl_rails (~> 4.9, >= 4.9.0)
   foreman
   gelf
-  haml
+  haml (~> 5.0, >= 5.0.4)
   hashie
   highline
-  jquery-rails
+  jquery-rails (>= 4.3.3)
   jwt
-  kaminari
+  kaminari (>= 1.1.1)
   mail
   mongo
-  moonrope
+  moonrope (>= 2.0.1)
   mysql2 (>= 0.3.18, < 0.5)
   nifty-utils
   nilify_blanks
@@ -281,12 +281,12 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (= 5.2.1)
   rspec
-  rspec-rails
-  sass-rails (~> 5.0)
+  rspec-rails (>= 3.8.0)
+  sass-rails (~> 5.0, >= 5.0.7)
   secure_headers
   sentry-raven
   turbolinks (~> 5)
   uglifier (>= 1.3.0)
 
 BUNDLED WITH
-   1.16.1
+   1.17.1
