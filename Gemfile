@@ -35,7 +35,7 @@ group :development, :assets do
   gem 'sass-rails', '~> 5.0', '>= 5.0.7'
   gem 'uglifier', '>= 1.3.0'
   gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
-  gem 'jquery-rails', '>= 4.3.3'
+  gem 'jquery-rails', '>= 4.3.4'
 end
 
 group :development, :test do
