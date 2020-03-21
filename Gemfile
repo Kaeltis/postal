@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rails', '= 5.2.2.1'
+gem 'rails', '= 5.2.4.2'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.0'
 gem 'turbolinks', '~> 5'
@@ -24,10 +24,10 @@ gem 'encrypto_signo'
 gem 'nio4r'
 gem 'mongo'
 gem 'sentry-raven'
-gem 'gelf'
+gem 'gelf', '>= 3.0.0'
 gem 'moonrope', '>= 2.0.1'
 gem 'jwt'
-gem 'createsend', '~> 4.0'
+gem 'createsend', '~> 4.1', '>= 4.1.2'
 gem 'acme-client'
 gem 'highline', :require => true
 
@@ -45,7 +45,7 @@ end
 group :development do
   gem 'annotate'
   gem 'rspec'
-  gem 'rspec-rails'
-  gem "factory_bot_rails", "~> 4.0"
+  gem 'rspec-rails', '>= 3.8.1'
+  gem "factory_bot_rails", "~> 4.11", ">= 4.11.1"
   gem "database_cleaner"
 end
