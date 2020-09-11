@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rails', '= 5.2.2.1'
+gem 'rails', '= 5.2.4.4'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.0'
 gem 'turbolinks', '~> 5'
@@ -45,7 +45,7 @@ end
 group :development do
   gem 'annotate'
   gem 'rspec'
-  gem 'rspec-rails'
-  gem "factory_bot_rails", "~> 4.0"
+  gem 'rspec-rails', '>= 3.8.1'
+  gem "factory_bot_rails", "~> 4.11", ">= 4.11.1"
   gem "database_cleaner"
 end
