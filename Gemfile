@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
-gem 'rails', '= 5.2.2.1'
+gem 'rails', '= 6.0.3.5'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.0'
 gem 'turbolinks', '~> 5'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'nifty-utils'
-gem 'nilify_blanks'
+gem 'nilify_blanks', '>= 1.3.0'
 gem 'kaminari', '>= 1.1.1'
 gem 'bcrypt'
 gem 'foreman'
 gem 'hashie'
 gem 'authie', '~> 3.0'
 gem 'dynamic_form'
-gem 'changey'
+gem 'changey', '>= 1.0.0'
 gem 'mail'
 gem 'autoprefixer-rails'
 gem 'bunny', '~> 2.5.1'
@@ -32,7 +32,7 @@ gem 'acme-client'
 gem 'highline', :require => true
 
 group :development, :assets do
-  gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+  gem 'sass-rails', '~> 5.0', '>= 5.0.8'
   gem 'uglifier', '>= 1.3.0'
   gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
   gem 'jquery-rails', '>= 4.3.3'
@@ -43,9 +43,9 @@ group :development, :test do
 end
 
 group :development do
-  gem 'annotate'
+  gem 'annotate', '>= 2.7.4'
   gem 'rspec'
-  gem 'rspec-rails'
-  gem "factory_bot_rails", "~> 4.0"
+  gem 'rspec-rails', '>= 3.8.1'
+  gem "factory_bot_rails", "~> 4.11", ">= 4.11.1"
   gem "database_cleaner"
 end
